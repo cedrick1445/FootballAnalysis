@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "909999418011",
+    "project_id": "football-analysis-55f57",
+    "storage_bucket": "football-analysis-55f57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909999418011:android:80d4027129f85e2051f43e",
+        "android_client_info": {
+          "package_name": "ced.football.analysismoto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909999418011-r8b4p45hdg9kpt71ni35gicb8tqp7cpp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMy6X062rNQlzCG7LSsQuleFy8W-RoG4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909999418011-r8b4p45hdg9kpt71ni35gicb8tqp7cpp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

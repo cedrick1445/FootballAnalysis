@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Football Analysis</string>
+
+    <string name="footballteam">
+        <b>Football Teams</b>
+    </string>
+
+    <string name="footballstadium">
+        <b>Football Stadium</b>
+    </string>
+
+    <string name="swipe"><i>--Swipe left to see more--</i></string>
+    <string name="footballfield">
+    The size of a football field is about 100m (meters) long and 60m (meters) wide, but in official matches there are some rules about the minimum and maximum size of a field. or national football, the most official sizes of the pitch are those as determined by the FIFA association.
+    </string>
+</resources>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:viewBindingIgnore="true"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/navbarft" />
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/motion_layout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background_home"
+        app:layoutDescription="@xml/dashboard_animations">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@null"
+                android:elevation="1000dp"
+                android:padding="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_close_24" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/live_image"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@drawable/appone"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@color/colorTransparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/first_text"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:drawablePadding="5dp"
+            android:elevation="20dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="3"
+            android:text="FootballInfo"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/live_image"
+            app:layout_constraintEnd_toEndOf="@+id/live_image"
+            app:layout_constraintStart_toStartOf="@+id/live_image"
+            app:layout_constraintTop_toTopOf="@id/live_image"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:id="@+id/first_indicator"
+            android:layout_width="40dp"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="#fff"
+            android:elevation="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/live_image"
+            app:layout_constraintStart_toStartOf="@id/live_image"
+            app:layout_constraintTop_toBottomOf="@id/first_text" />
+
+        <ImageView
+            android:id="@+id/matches_image"
+            android:layout_width="410dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="300dp"
+            android:background="@drawable/apptwo"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@color/colorTransparent"
+            app:layout_constraintStart_toEndOf="@+id/live_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/second_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:elevation="20dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="3"
+            android:text="FootballTeam"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/matches_image"
+            app:layout_constraintEnd_toEndOf="@+id/matches_image"
+            app:layout_constraintStart_toStartOf="@+id/matches_image"
+            app:layout_constraintTop_toTopOf="@id/matches_image"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:id="@+id/second_indicator"
+            android:layout_width="40dp"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="#ccc"
+            android:elevation="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/matches_image"
+            app:layout_constraintStart_toStartOf="@id/matches_image"
+            app:layout_constraintTop_toBottomOf="@id/second_text" />
+
+        <ImageView
+            android:id="@+id/players_image"
+            android:layout_width="410dp"
+            android:layout_height="250dp"
+            android:background="@drawable/appthree"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@color/colorTransparent"
+            app:layout_constraintStart_toEndOf="@+id/matches_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/third_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:elevation="20dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="3"
+            android:text="FootballStadium"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/players_image"
+            app:layout_constraintEnd_toEndOf="@+id/players_image"
+            app:layout_constraintStart_toStartOf="@+id/players_image"
+            app:layout_constraintTop_toTopOf="@id/players_image"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:id="@+id/third_indicator"
+            android:layout_width="40dp"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="#ccc"
+            android:elevation="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/players_image"
+            app:layout_constraintStart_toStartOf="@id/players_image"
+            app:layout_constraintTop_toBottomOf="@id/third_text" />
+
+        <ImageView
+            android:id="@+id/leagues_image"
+            android:layout_width="410dp"
+            android:layout_height="250dp"
+            android:background="@drawable/appfour"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@color/colorTransparent"
+            app:layout_constraintStart_toEndOf="@+id/players_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fourth_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:elevation="20dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="3"
+            android:text="FootballNews"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/leagues_image"
+            app:layout_constraintEnd_toEndOf="@+id/leagues_image"
+            app:layout_constraintStart_toStartOf="@+id/leagues_image"
+            app:layout_constraintTop_toTopOf="@id/leagues_image"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:id="@+id/fourth_indicator"
+            android:layout_width="40dp"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="#ccc"
+            android:elevation="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/leagues_image"
+            app:layout_constraintStart_toStartOf="@id/leagues_image"
+            app:layout_constraintTop_toBottomOf="@id/fourth_text" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/leagues_image" />
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</LinearLayout>
